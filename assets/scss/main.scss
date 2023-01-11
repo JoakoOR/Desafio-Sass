@@ -1,0 +1,49 @@
+
+
+/* cambio de tipografia */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+$font-family-base: 'Dancing Script', cursive;
+
+/* custom con extend */
+
+.custom-bg{
+    @extend .bg-customcolor;
+    color:white;
+}
+
+/* Cambio valores por default de Bootstrap */
+
+// scss-docs-start theme-color-variables
+
+$primary: rgba(224, 31, 205, 0.734);
+$secondary:rgb(85, 66, 106);
+$success: whitesmoke;
+$info:rgb(76, 146, 104);
+$warning:rgb(62, 5, 40);
+$danger:rgb(145, 23, 23);
+$light:rgb(236, 239, 79);
+$dark:rgb(0, 0, 0);
+$customcolor:rgb(40, 44, 53);  
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "customcolor":    $customcolor,
+);
+
+
+// scss-docs-end theme-colors-map
+
+/* Importar Bootstrap Sass */
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
